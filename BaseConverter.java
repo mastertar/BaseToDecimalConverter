@@ -1,6 +1,6 @@
 import java.lang.Math;
 import java.util.Scanner;
-public class BaseConverter
+public class BaseConvertor 
 {
 	public static void main(String[] args)
 	{
@@ -34,7 +34,7 @@ public class BaseConverter
             if(!(temp % 10 < base) || temp < 0)
             {
                 System.out.println("Please enter a valid number!");
-                break;
+                return;
             }
             sum += ((temp % 10) * (Math.pow(base, counter)));
             // temp -= (temp%10);
